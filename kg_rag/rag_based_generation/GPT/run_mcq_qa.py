@@ -41,7 +41,6 @@ MODE = 0
 ### MODE 2: Add the prior domain knowledge      ### 
 ### MODE 3: Combine MODE 1 & 2                  ### 
 
-
 def main():
     start_time = time.time()
     question_df = pd.read_csv(QUESTION_PATH)
