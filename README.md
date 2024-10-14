@@ -1,4 +1,4 @@
-## Instructions for CS598JH
+## Instruction for CS598JH
 
 1. Set up the environment following the instructions in original README.
 2. Update your Google API key in `gpt_config.env`.
