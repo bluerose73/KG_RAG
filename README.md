@@ -15,7 +15,7 @@
 ## Original README
 
 <p align="center">
-  <img src="https://github.com/yzjiao/KG_RAG/assets/42702311/0b2f5b42-761e-4d5b-8d6f-77c8b965f017" width="450">
+  <img src="https://github.com/BaranziniLab/KG_RAG/assets/42702311/0b2f5b42-761e-4d5b-8d6f-77c8b965f017" width="450">
 </p>
 
 
@@ -53,7 +53,7 @@ KG-RAG stands for Knowledge Graph-based Retrieval Augmented Generation.
 
 ### Start by watching the video of KG-RAG
 
-<video src="https://github.com/yzjiao/KG_RAG/assets/42702311/86e5b8a3-eb58-4648-95a4-271e9c69b4ed" controls="controls" style="max-width: 730px;">
+<video src="https://github.com/BaranziniLab/KG_RAG/assets/42702311/86e5b8a3-eb58-4648-95a4-271e9c69b4ed" controls="controls" style="max-width: 730px;">
 </video>
 
 It is a task agnostic framework that combines the explicit knowledge of a Knowledge Graph (KG) with the implicit knowledge of a Large Language Model (LLM). Here is the [arXiv preprint](https://arxiv.org/abs/2311.17330) of the work.
@@ -70,7 +70,7 @@ Hence, this framework empowers a general-purpose LLM by incorporating an optimiz
 ## Example use case of KG-RAG
 Following snippet shows the news from FDA [website](https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-treatment-weight-management-patients-bardet-biedl-syndrome-aged-6-or-older) about the drug **"setmelanotide"** approved by FDA for weight management in patients with *Bardet-Biedl Syndrome*
 
-<img src="https://github.com/yzjiao/KG_RAG/assets/42702311/fc4d0b8d-0edb-461d-86c5-9d0d191bd97d" width="600" height="350">
+<img src="https://github.com/BaranziniLab/KG_RAG/assets/42702311/fc4d0b8d-0edb-461d-86c5-9d0d191bd97d" width="600" height="350">
 
 ### Ask GPT-4 about the above drug:
 
