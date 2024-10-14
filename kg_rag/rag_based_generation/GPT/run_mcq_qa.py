@@ -35,7 +35,7 @@ node_context_df = pd.read_csv(NODE_CONTEXT_PATH)
 edge_evidence = False
 
 
-MODE = 0
+MODE = "0"
 ### MODE 0: Original KG_RAG                     ### 
 ### MODE 1: jsonlize the context from KG search ### 
 ### MODE 2: Add the prior domain knowledge      ### 
