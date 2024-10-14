@@ -1,10 +1,10 @@
 ## Instruction for CS598JH
 
-1. Set up the environment following Steps 1-5 in the original README.
-2. Update your Google API key in `gpt_config.env`.
-3. Bash run_gemini.sh to replicate KG-RAG with gemini-1.5-flash.
-4. Evaluate the model via `data/my_results/evaluate_gemini.py`
-5. Implement three enhancement strategies in `kg_rag/rag_based_generation/GPT/run_mcq_qa.py`.
+**1. Set up the environment following Steps 1-5 in the original README.**
+**2. Update your Google API key in `gpt_config.env`.**
+**3. Bash run_gemini.sh to replicate KG-RAG with gemini-1.5-flash.**
+**4. Evaluate the model via `data/my_results/evaluate_gemini.py`**
+**5. Implement three enhancement strategies in `kg_rag/rag_based_generation/GPT/run_mcq_qa.py`.**
 
 
 
