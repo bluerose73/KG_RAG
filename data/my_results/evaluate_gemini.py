@@ -13,8 +13,6 @@ def contains_correct_answer(row):
     try: 
         return row['correct_answer'] == json.loads(row['llm_answer'].replace('```', '').replace('\n', '').replace('json', '').replace('{{', '{').replace('}}', '}').split('}')[0] + '}')['answer']
     except:
-        print(row['llm_answer'].replace('```', '').replace('\n', '').replace('json', '').replace('{{', '{').replace('}}', '}').split('}')[0] + '}')
-        breakpoint()
         return False
 
 # Apply the function to each row of the DataFrames
