@@ -229,7 +229,7 @@ def get_GPT_response(instruction, system_prompt, chat_model_id, chat_deployment_
 
 
 @retry(wait=wait_random_exponential(min=10, max=30), stop=stop_after_attempt(5))
-def fetch_Gemini_response(instruction, system_prompt, temperature=0):
+def fetch_Gemini_response(instruction, system_prompt, temperature=0.0):
     model = genai.GenerativeModel(
         model_name="gemini-1.5-flash",
         system_instruction=system_prompt,
