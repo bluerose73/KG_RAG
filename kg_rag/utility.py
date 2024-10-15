@@ -234,7 +234,7 @@ def fetch_Gemini_response(instruction, system_prompt, temperature=0):
         model_name="gemini-1.5-flash",
         system_instruction=system_prompt,
     )
-    response = model.generate_content(instruction)
+    response = model.generate_content(instruction, temperature=0.0)
     return response.text
     
 
