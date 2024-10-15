@@ -234,13 +234,13 @@ def fetch_Gemini_response(instruction, system_prompt, temperature=0.0):
         model_name="gemini-1.5-flash",
         system_instruction=system_prompt,
     )
-    response = model.generate_content(instruction)
+    response = model.generate_content(instruction, temperature=temperature)
     return response.text
     
 
 
 @memory.cache
-def get_Gemini_response(instruction, system_prompt, temperature=0):
+def get_Gemini_response(instruction, system_prompt, temperature=0.0):
     res = fetch_Gemini_response(instruction, system_prompt, temperature)
     return res
 
@@ -283,7 +283,7 @@ def disease_entity_extractor(text):
 def disease_entity_extractor_v2(text, model_id):
     assert model_id in ("gemini-1.5-flash")
     prompt_updated = system_prompts["DISEASE_ENTITY_EXTRACTION"] + "\n" + "Sentence : " + text
-    resp = get_Gemini_response(prompt_updated, system_prompts["DISEASE_ENTITY_EXTRACTION"], temperature=0)
+    resp = get_Gemini_response(prompt_updated, system_prompts["DISEASE_ENTITY_EXTRACTION"], temperature=0.0)
     if resp.startswith("```json\n"):
         resp = resp.replace("```json\n", "", 1)
     if resp.endswith("\n```"):
