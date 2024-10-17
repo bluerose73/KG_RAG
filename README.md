@@ -4,9 +4,9 @@
 
 **2. Update your Google API key in `gpt_config.env`.**
 
-**3. Bash run_gemini.sh to replicate KG-RAG with gemini-1.5-flash.**
+**3. Replicate KG-RAG with gemini-1.5-flash via `sh run_gemini.sh`.**
 
-**4. Evaluate the model via `data/my_results/evaluate_gemini.py`**
+**4. Evaluate the model via `python data/my_results/evaluate_gemini.py`**
 
 **5. Implement three enhancement strategies in `kg_rag/rag_based_generation/GPT/run_mcq_qa.py`.**
 
@@ -123,14 +123,9 @@ pip install -r requirements.txt
 Note: There is another yaml file called [system_prompts.yaml](https://github.com/yzjiao/KG_RAG/blob/main/system_prompts.yaml). This is already populated and it holds all the system prompts used in the KG-RAG framework.
 
 ### Step 5: Run the setup script
-Note: Make sure you are in KG_RAG folder
+Note: Make sure you are in KG_RAG folder. 
 
-Setup script runs in an interactive fashion.
-
-Running the setup script will: 
-
-- create disease vector database for KG-RAG
-- download Llama model in your machine (optional, you can skip this and that is totally fine)
+Running the setup script will create disease vector database for KG-RAG
 
 ```
 python -m kg_rag.run_setup
