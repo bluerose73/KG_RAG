@@ -10,7 +10,7 @@
 
 **5. Implement three enhancement strategies in `kg_rag/rag_based_generation/GPT/run_mcq_qa.py`.**
 
-
+**6. Evaluate these model varients by changing the model output path in the file `data/my_results/evaluate_gemini.py` and running it.**
 
 
 
