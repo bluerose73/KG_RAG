@@ -1,6 +1,6 @@
 ## Instruction for CS598JH
 
-**1. Set up the environment following Steps 1-5 in the original README.**
+**1. Set up the environment following Steps 1-4 in the original README.**
 
 **2. Update your Google API key in `gpt_config.env`.**
 
@@ -116,13 +116,7 @@ cd KG_RAG
 pip install -r requirements.txt
 ```
 
-### Step 4: Update config.yaml 
-
-[config.yaml](https://github.com/yzjiao/KG_RAG/blob/main/config.yaml) holds all the necessary information required to run the scripts in your machine. Make sure to populate [this](https://github.com/yzjiao/KG_RAG/blob/main/config.yaml) yaml file accordingly.
-
-Note: There is another yaml file called [system_prompts.yaml](https://github.com/yzjiao/KG_RAG/blob/main/system_prompts.yaml). This is already populated and it holds all the system prompts used in the KG-RAG framework.
-
-### Step 5: Run the setup script
+### Step 4: Run the setup script
 Note: Make sure you are in KG_RAG folder. 
 
 Running the setup script will create disease vector database for KG-RAG
